@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH EXPRESSIONs</title>
+</head>
+<body>
+
+<script>
+//    Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your
+// browser://
+
+// var a =  10;
+
+// document.write('the value of a is'+ " " + a + '<br>'); 
+// a = ++a;
+
+// document.write('the value of ++a is'+ " " + a + '<br>');
+// document.write('Now the value of ++a is'+ " " + a + '<br>');
+
+// a = a++;
+
+// document.write('the value of ++a is'+ " " + a + '<br>');
+
+// a = ++a;
+
+// document.write('Now the value of ++a is'+ " " + a + '<br>');
+
+
+// 3. Write a program that takes input a name from user & 
+// greet the user.
+
+// var userName = prompt();
+
+// alert(userName + " " + 'welcome to our portal');
+
+// 5.Write a program to take input a number from user & 
+// display it’s multiplication table on your browser. If user 
+// does not enter a new number, multiplication table of 5 
+// should be displayed by default.
+
+// Take a input:
+// var userInput = prompt();
+
+// if(userInput == "" || userInput == null){
+//     userInput = 5;
+// }
+
+// else{
+//     userInput = parseInt(userInput);
+// }
+
+// document.write(userInput + ' x 1 = ' + (userInput * 1) + "<br>");
+// document.write(userInput + ' x 2 = ' + (userInput * 2) + "<br>");
+// document.write(userInput + ' x 3 = ' + (userInput * 3) + "<br>");
+// document.write(userInput + ' x 4 = ' + (userInput * 4) + "<br>");
+// document.write(userInput + ' x 5 = ' + (userInput * 5) + "<br>");
+// document.write(userInput + ' x 6 = ' + (userInput * 6) + "<br>");
+// document.write(userInput + ' x 7 = ' + (userInput * 7) + "<br>");
+// document.write(userInput + ' x 8 = ' + (userInput * 8) + "<br>");
+// document.write(userInput + ' x 9 = ' + (userInput * 9) + "<br>");
+// document.write(userInput + ' x 10 = ' + (userInput * 10) + "<br>");
+
+// 6. Take
+// a) Take three subjects name from user and store them in 3 
+// different variables.
+// b) Total marks for each subject is 100, store it in another 
+// variable.
+// c) Take obtained marks for first subject from user and 
+// stored it in different variable.
+// ALERTS | JAVASCRIPT
+// Page 3 of 3
+// d) Take obtained marks for remaining 2 subjects from user 
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the 
+// result in browser like this.(Hint: user table)
+
+let sub1 = prompt("Enter the name of subject 1:");
+let sub2 = prompt("Enter the name of subject 2:");
+let sub3 = prompt("Enter the name of subject 3:");
+
+//total marks//
+
+let totalMarks = 100;
+
+//total marks of subject//
+let marks1 = +prompt("Enter subject1 marks");
+let marks2 = +prompt("Enter subject2 marks");
+let marks3 = +prompt("Enter subject3 marks");
+
+//Result calculation//
+
+let totalObtained = marks1 + marks2 + marks3 ;
+let totalPossible = totalMarks * 3;
+let totalPercentage = (totalObtained / totalPossible) * 100;
+
+document.write("Subject: " + sub1 + ", Marks: " + marks1 + " out of " + totalMarks + "<br>");
+document.write("Subject: " + sub2 + ", Marks: " + marks2 + " out of " + totalMarks + "<br>");
+document.write("Subject: " + sub3 + ", Marks: " + marks3 + " out of " + totalMarks + "<br>");
+document.write("<br>Total Marks: " + totalPossible + "<br>");
+document.write("Marks Obtained: " + totalObtained + "<br>");
+document.write("Percentage: " + totalPercentage.toFixed(2) + "%<br>");
+</script>
+</body>
+</html>
