@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array Practice</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <h1>Array Practice</h1>
+
+</body>
+<script>
+// var arr = ['murtuza', 'ali', 'saqib', 'umair', 'ashraf']
+
+// console.log(arr)
+// console.log(arr.length)
+
+// all data store in array
+// var arr = [
+//     'murtuza', 
+// 'ali', 
+// 'saqib', 
+// 'umair', 
+// 'ashraf',
+// undefined,
+// 2,
+// true,
+// "saqlain"]
+
+// var checkIndex = arr[5];
+
+// console.log(arr)
+// console.log(checkIndex)
+
+//array push method
+
+// push method ap k array k end waly index k baad apka push ki hue index value add kardeta hai
+
+// var fruitsArr = ['apple', 'banana', 'strawberry']
+// fruitsArr.push("grapes") //to add in last//
+// fruitsArr.pop() // to remove in last//
+// fruitsArr.unshift(400) //to add in start//
+// fruitsArr.shift() // to remove from start//
+
+// console.log(fruitsArr)
+
+
+// for cities index number choosing
+
+// var cities = ['karachi', 'islamabad', 'lahore',]
+
+// var checkCityindex = cities[1]
+
+// console.log(cities)
+// console.log(checkCityindex)
+
+// adding and removing example on empty array
+
+// var petsArr = [] // empty array
+
+// petsArr[0] = "dog";
+// petsArr[1] = "cat";
+// // petsArr[2] = "parrots" // jahan pe empty hota hai console ma b empty dekhata hai magar lenght main add karta hai
+// petsArr[3] = "bird"
+
+// console.log(petsArr)
+// console.log(petsArr.length)
+
+// indexOf method //
+
+// indexOf method batata hai k apki elemenent value lata hai
+// is k 3 kaam hai
+
+// 1) item ka index lata hai
+// 2)jab k is ko array mai ik hi naam k do items milty hai yeh first condition ki value ko lata hai.
+// 3) jab array mai mention kia hua item na ho tou uski index value minus 1 ma ate hai
+
+// var charsArr = ['a', 'b' , 'c', 'd', 'a', 'b', 'z']
+
+// // var finddata = charsArr.indexOf('b'); //is mai 2nd condition lag rhe hai
+
+// var finddata = charsArr.indexOf('w'); //
+
+// console.log(finddata)
+
+//slice method//
+
+// slice method array ki copy bana k deta hai
+
+// slice ko hum jo b index number dege woh array ki starting index value se end ki lenght tk copy banaega
+
+// var cities = ['karachi', 'islamabad', 'lahore', 'a', 'b', 2, true]
+
+// var copyArr = cities.slice(1, 4);
+
+// console.log(copyArr)
+
+//splice method// jo k 3 parameters accept karta hai
+
+// 1st parameter kehta hai kahan se start karna hai.cities
+// 2nd parameter kehta hai kahan se remove karna hai.
+// 3rd kehta hai kitne items add karne hai.
+
+var cities = ['karachi', 'islamabad', 'lahore', 'a', 'b', 2, true]
+
+ cities.splice(1, 2, "murtuza");
+
+console.log(cities);
+</script>
+
+</html>
