@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array Exercises</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <h1>Array Exercises</h1>
+
+</body>
+<script>
+
+// 1. Declare and initialize a mixed array (Use all data types).
+
+// var mixArr = [true, 'ahmed', 2 , "murtuza", false, "karachi", 2500];
+
+// console.log(mixArr);
+
+// 2. Declare and Initialize an array and store available mobile
+// networks in Pakistan.
+
+// var mobileNetworksArr = ['jazz', 'zong', 'warid', 'telenor'];
+
+// console.log(mobileNetworksArr);
+
+// 3. Declare and Initialize an array and store available education
+// qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS,
+// M. Phil., PhD). Show the listed qualifications in browser console.
+
+// var qualificationsArr = [];
+
+// qualificationsArr[0] = "SSC";
+// qualificationsArr[1] = "HSC";
+// qualificationsArr[2] = "BCS";
+// qualificationsArr[3] = "BS";
+// qualificationsArr[4] = "BCOM";
+// qualificationsArr[5] = "MS";
+// qualificationsArr[6] = "M.Phill";
+// qualificationsArr[7] = "PhD";
+
+
+// //show on documents//
+
+// document.write('Qualifications in Pakistan  <br />');
+// document.write(qualificationsArr[0] + '<br />');
+// document.write(qualificationsArr[1] + '<br />');
+// document.write(qualificationsArr[2] + '<br />');
+// document.write(qualificationsArr[3] + '<br />');
+// document.write(qualificationsArr[4] + '<br />');
+// document.write(qualificationsArr[5] + '<br />');
+// document.write(qualificationsArr[6] + '<br />');
+// document.write(qualificationsArr[7]);
+
+// console.log(qualificationsArr);
+
+// 4. Declare and initialize an empty array to store top cartoons. Add
+// cartoon one by one in an array. Display the elements & length
+// of array in browser console.
+
+// var cartoonsArr = [];
+
+// cartoonsArr[0] = "Avengers: Age of Ultron";
+// cartoonsArr[1] = "Spectre";
+// cartoonsArr[2] = "Jurassic World";
+// cartoonsArr[3] = "Inside Out";
+
+// document.write("<strong>Top Movies of 2015</strong>" + '<br />');
+
+// document.write('1)' + cartoonsArr[0] + '<br />' );
+// document.write('2)' + cartoonsArr[1] + '<br />' );
+// document.write('3)' + cartoonsArr[2] + '<br />' );
+// document.write('4)' + cartoonsArr[3] + '<br />' );
+
+// document.write("<strong>Lenght of Array</strong>" + ' ' + cartoonsArr.length);
+
+// console.log(cartoonsArr);
+
+
+// 5. Declare and Initialize an array with your favorite cars. Show
+// a. First index of the array
+// b. Car at first index of the array
+// c. Last index of the array
+// d. Car at last index of the array
+
+// var carsArr = ['Audi', 'volvo', 'Ford', 'Lamborgani'];
+
+
+// // a
+// document.write(carsArr[0] + ',');
+// document.write(carsArr[1] + ',');
+// document.write(carsArr[2] + ',');
+// document.write(carsArr[3] + ',' + '<br />');
+
+
+// document.write('<strong>First index of the array:</strong>'+ carsArr.indexOf("Audi") + '<br>');
+
+// document.write('<strong>Car at the first index of the array:</strong>'+ carsArr[0] + '<br>');
+
+
+// document.write('<strong>Last index of the array:</strong>'+ carsArr.indexOf('Lamborgani') + '<br>')
+
+// document.write('<strong>Car at the last index of the array:</strong>'+ carsArr[3] + '<br>')
+
+
+// console.log(carsArr)
+
+// 6. Write a program to store 3 student names in an array. Take
+// another array to store score of these three students. Assume
+// that total marks are 500 for each student, display the scores &
+// percentages of students like:
+
+// var studentsNames= ['Micheal', 'john', 'Tony'];
+
+// var studentScores = [320,230,480];
+
+// var totalMArks = 500;
+
+// document.write('Score of ' + studentsNames[0]+ 'is ' + studentScores[0] + '.' + 'Percentage: ' +  (studentScores[0] / totalMArks)* 100 + '<br>');
+
+// document.write('Score of ' + studentsNames[1]+ 'is ' + studentScores[1] + '.' + 'Percentage: ' +  (studentScores[1] / totalMArks)* 100 + '<br>');
+
+// document.write('Score of ' + studentsNames[2]+ 'is ' + studentScores[2] + '.' + 'Percentage: ' +  (studentScores[2] / totalMArks)* 100 + '<br>');
+
+
+// 8. Write a program to store student scores in an array & sort
+// the array in ascending order using Array’s sort method.
+
+// var studentsArr = [320,230,480,120];
+
+// console.log(studentsArr.sort());
+
+// Sort method issue// Assending and desending orders ma numbers lakar deta hai
+// var studentsArr = [320,1,230,2,480,120];
+
+// console.log(studentsArr.sort());
+
+
+// 9. Write a program to sort the below mentioned array: var
+// fruits = [“strawberry”, “apple”, “orange”, “banana”];
+
+// var fruits = ["strawberry", "apple", "orange", "banana"];
+
+// console.log(fruits);
+// console.log(fruits.sort());
+
+// 10. Write a program to initialize an array with city names. Copy
+// 3 array elements from cities array to selectedCities array.
+
+// var citiesArr = ['karachi', 'lahore', 'islamabad', 'quetta', 'Peshawar'];
+
+// var selectedCities = citiesArr.slice(2, 4);
+
+// console.log(citiesArr)
+
+// console.log(selectedCities)
+
+// 11.Write a program to create a single string from the below
+// mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+
+// use array join method item ko convert karta hai string ma
+
+// var arr = ["This ", " is ", " my ", " cat"];
+
+// var convertToString = arr.join( " ");
+
+// console.log(arr)
+
+// console.log(convertToString)
+
+// 12. Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they were
+// stored. (FIFO-First In First Out)
+
+// var items = ['keyboard', 'mouse', 'hardware']
+
+// items.pop();
+
+// items.pop();
+
+// items.pop();
+
+// console.log(items)
+
+// 13. Create a new array. Store values one by one in such a way
+// that you can access the values in reverse order. (Last In-First
+// Out)
+
+// var items = [];
+
+// items.push('keyboard');
+// items.push('mouse');
+// items.push('printer');
+// items.push('hardware');
+
+// var itemsReverseArr = items.reverse();
+
+// console.log(itemsReverseArr);
+
+
+// 14. Declare and initialize a multidimensional array representing
+// the following matrix: 
+
+var multidimensionalArr = [ [0 , 1 , 2, 3], [1 , 0 ,1 ,2], [2,1,0,2]];
+
+var a = multidimensionalArr[0];
+var b = multidimensionalArr[1];
+var c = multidimensionalArr[2];
+
+console.log(multidimensionalArr)
+
+console.log(a , b, c)
+
+
+
+
+</script>
+
+</html>
