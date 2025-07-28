@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: font;
+            src: url("../table/font/Bouncy-PERSONAL_USE_ONLY.otf")
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px 0;
+            background: linear-gradient(to right, #130f40, #4834d4, #130f40);
+        }
+
+        body h1 {
+            font-family: font;
+            color: #fff;
+            font-size: 50px;
+        }
+
+        body form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        body form input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        body form button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background: #e67e22;
+            color: #fff;
+            font-size: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body table {
+            width: 350px;
+            border: 1px solid #fff;
+            border-collapse: collapse;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body table tr td {
+            border: 1px solid #fff;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generate Table</h1>
+    <form id="form">
+        <input type="number" placeholder="Enter Number" id="num">
+        <button type="submit">Generate Table</button>
+    </form>
+
+    <table id="table">
+
+
+        <!-- <tr>
+            <td>2</td>
+            <td>x</td>
+            <td>2</td>
+            <td>=</td>
+            <td>4</td>
+        </tr> -->
+    </table>
+
+    <script>
+        let table = document.getElementById("table");
+        let form = document.getElementById("form")
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let userValue = e.target.num.value;
+
+            if (userValue == "") {
+                alert('Please type number');
+            } else {
+                table.innerHTML = "";
+                for (var i = 1; i <= 10; i++) {
+                    // console.log([i])
+                    table.innerHTML += `
+                        <tr>
+            <td>${userValue}</td>
+            <td>x</td>
+            <td>${i}</td>
+            <td>=</td>
+            <td>${userValue * i}</td>
+        </tr>
+                    `
+                }
+            }
+
+            form.reset()
+        })
+
+        // console.log(form)
+    </script>
+</body>
+
+</html>
